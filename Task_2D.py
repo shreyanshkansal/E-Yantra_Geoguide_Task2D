@@ -102,13 +102,6 @@ def tracker(ar_id, lat_lon):
 
     write_csv(lat_lon[ar_id], filename)
 
-
-    ''' fields = ['lat', 'lon']
-        with open(filename, 'w') as csvfile:
-        csvwriter =  csv.writer(csvfile)
-        csvwriter.writerow(fields)
-        csvwriter.writerows(lat_lon[ar_id])
-    '''
     coordinate = lat_lon[ar_id]
     return coordinate
 
